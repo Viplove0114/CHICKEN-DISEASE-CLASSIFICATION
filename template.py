@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format= '[%(asctime)s] %(message)s:')
 
-project_name = "chicken_classfier"
+project_name = "chicken_classifier"
 '''
 #we need this for deployment, i will be writing all the ci cd related commands,
 #like main.yaml file will be created here.
@@ -26,7 +26,9 @@ list_of_files = [
     "dvc.yaml", # because we are using dvc(ml oops tool)
     "requirements.txt",
     "setup.py",
-    "research/trials.ipynb"
+    "research/trials.ipynb",
+    "templates/index.html"
+
     ]
 
 for filepath in list_of_files:
